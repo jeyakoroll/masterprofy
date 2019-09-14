@@ -1,0 +1,11 @@
+# This allows you to redirect your entire website to any other domain
+ErrorDocument 404 /404.html
+
+Redirect https://www.masterprofy.com.ua/works/ https://www.masterprofy.com.ua/raboty/
+Redirect https://www.masterprofy.com.ua/contacts/ https://www.masterprofy.com.ua/contacty/
+Redirect https://www.masterprofy.com.ua/partners/ https://www.masterprofy.com.ua/partnery/
+Redirect https://www.masterprofy.com.ua/instrument/ https://www.masterprofy.com.ua/catalog/instrumenty/
+Redirect https://www.masterprofy.com.ua/smesi/ https://www.masterprofy.com.ua/catalog/smesi/
+
+# Provide Specific Index Page (Set the default handler)
+# DirectoryIndex index.html
