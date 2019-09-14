@@ -20,11 +20,11 @@ $(document).ready(function() {
   // MENU
   let dataMenu = {
     menutext: [
-      { text: 'О компании', path: '/' },
-      { text: 'Каталог', path: '/catalog' },
-      { text: 'Наши работы', path: '/raboty' },
-      { text: 'Контакты', path: '/contacty' },
-      { text: 'Партнеры', path: '/partnery' }
+      { text: 'О компании', path: '/masterprofy/' },
+      { text: 'Каталог', path: '/masterprofy/catalog' },
+      { text: 'Наши работы', path: '/masterprofy/raboty' },
+      { text: 'Контакты', path: '/masterprofy/contacty' },
+      { text: 'Партнеры', path: '/masterprofy/partnery' }
     ]
   };
   let tmplMenu = $('#forMenu').html();
@@ -41,21 +41,21 @@ $(document).ready(function() {
   // MAIN FORM
   let pathname = window.location.pathname;
   let urlPath =
-    pathname === '/'
+    pathname === '/masterprofy/'
       ? 'form.php'
-      : pathname === '/catalog/' ||
-        pathname === '/raboty/' ||
-        pathname === '/partnery/' ||
-        pathname === '/catalog/'
-        ? '../form.php'
-        : pathname === '/catalog/kirpich/' ||
-          pathname === '/catalog/instrumenty/' ||
-          pathname === '/catalog/smesi/'
-          ? '../../form.php'
-          : pathname === '/catalog/kirpich/licevoy/' ||
-            pathname === '/catalog/kirpich/riadovoy/'
-            ? '../../../form.php'
-            : null;
+      : pathname === '/masterprofy/catalog/' ||
+        pathname === '/masterprofy/raboty/' ||
+        pathname === '/masterprofy/partnery/' ||
+        pathname === '/masterprofy/catalog/'
+      ? '../form.php'
+      : pathname === '/masterprofy/catalog/kirpich/' ||
+        pathname === '/masterprofy/catalog/instrumenty/' ||
+        pathname === '/masterprofy/catalog/smesi/'
+      ? '../../form.php'
+      : pathname === '/masterprofy/catalog/kirpich/licevoy/' ||
+        pathname === '/masterprofy/catalog/kirpich/riadovoy/'
+      ? '../../../form.php'
+      : null;
 
   // console.log("относительно корня", window.location.pathname);
   // console.log("url to form.php", urlPath);
